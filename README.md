@@ -10,6 +10,12 @@ This app helps users **track cycles, predict upcoming periods, and manage record
 
 ---
 
+<p align="center">
+  <img src="screenshot-desktop.png" alt="Desktop Screenshot" width="400">
+  <img src="screenshot-mobile.png" alt="Mobile Screenshot" width="200">
+</p>
+
+
 ## ✨ Features
 ✅ Track menstruation start & end dates  
 ✅ Calculate average cycle length  
