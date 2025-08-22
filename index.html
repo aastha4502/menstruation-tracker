@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menstruation Detection & Cycle Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Menstruation Detection & Cycle Tracker</h1>
+    <p class="subtitle">Simple, private, client-side period predictions with symptoms.</p>
+  </header>
+
+  <main class="app">
+    <!-- LEFT: Inputs + Results -->
+    <section class="card">
+      <h2>Your Cycle Basics</h2>
+      <div class="row">
+        <div>
+          <label for="start">Last period start date</label>
+          <input type="date" id="start" />
+        </div>
+        <div>
+          <label for="cycle">Average cycle length (days)</label>
+          <input type="number" id="cycle" min="20" max="60" placeholder="28" />
+        </div>
+      </div>
+      <div class="row">
+        <div>
+          <label for="flow">Typical period length (days)</label>
+          <input type="number" id="flow" min="2" max="10" placeholder="5" />
+        </div>
+        <div>
+          <label for="luteal">Luteal phase (days, optional)</label>
+          <input type="number" id="luteal" min="10" max="18" placeholder="14" />
+        </div>
+      </div>
+
+      <div class="actions">
+        <button class="btn primary" id="calc">Calculate</button>
+        <button class="btn ghost" id="save">Save</button>
+        <span class="pill" id="savedMsg" hidden>Saved locally ✔</span>
+      </div>
+
+      <div class="grid" style="margin-top:14px" id="metrics">
+        <div class="metric"><span>Next period</span><strong id="nextPeriod">—</strong></div>
+        <div class="metric"><span>Ovulation</span><strong id="ovulation">—</strong></div>
+        <div class="metric"><span>Fertile window</span><strong id="fertile">—</strong></div>
+        <div class="metric"><span>Current cycle day</span><strong id="cd">—</strong></div>
+      </div>
+    </section>
+
+    <!-- RIGHT: Symptom Detection -->
+    <section class="card">
+      <div class="section-title">
+        <h2>Today’s Symptoms (optional)</h2>
+        <span class="tiny">Helps infer likely phase</span>
+      </div>
+      <div class="symptoms" id="symptomList">
+        <label><input type="checkbox" value="cramps"> Cramps</label>
+        <label><input type="checkbox" value="bloating"> Bloating</label>
+        <label><input type="checkbox" value="mood"> Mood swings/irritability</label>
+        <label><input type="checkbox" value="acne"> Acne/oily skin</label>
+        <label><input type="checkbox" value="tender"> Breast tenderness</label>
+        <label><input type="checkbox" value="spotting"> Spotting</label>
+      </div>
+      <div class="actions" style="margin-top:12px">
+        <button class="btn primary" id="detect">Detect Phase</button>
+        <span class="badge b-warn" id="phaseBadge">No data</span>
+      </div>
+      <p class="tiny" style="margin-top:10px">This is not medical advice. Calculations are estimates based on averages; cycles vary from person to person.</p>
+    </section>
+
+    <!-- CALENDAR -->
+    <section class="card" style="grid-column:1 / -1">
+      <div class="section-title">
+        <h2>Calendar Preview (next 3 months)</h2>
+        <div class="legend">
+          <span><i class="dot m"></i> Menstruation</span>
+          <span><i class="dot f"></i> Fertile window</span>
+          <span><i class="dot o"></i> Ovulation</span>
+        </div>
+      </div>
+      <div id="calendars" style="display:grid;gap:18px"></div>
+    </section>
+  </main>
+
+  <footer style="text-align: center;">
+    MenstaBuddy. 💜
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
