@@ -1,38 +1,45 @@
 # 🌸 Menstruation Tracker (MenstaBuddy)
 
-A simple and responsive **menstruation cycle tracker** built using **HTML, CSS, and JavaScript**.  
-This app helps users track their cycle, predict upcoming dates, and maintain records in a clean UI.  
+A responsive and lightweight **Menstruation Cycle Tracker** built with **HTML, CSS, and JavaScript**.  
+This app helps users **track cycles, predict upcoming periods, and manage records** with a simple and clean UI.  
 
 ---
 
-## 🚀 Live Demo
-👉 [Menstruation Tracker](https://aastha4502.github.io/menstruation-tracker/)
+## 🚀 Live Demo  
+🔗 [View Project](https://aastha4502.github.io/menstruation-tracker/)  
 
 ---
 
 ## ✨ Features
-- Track menstruation start and end dates  
-- Calculate cycle length  
-- Predict next cycle date  
-- Responsive UI for mobile & desktop  
-- User-friendly and lightweight  
+✅ Track menstruation start & end dates  
+✅ Calculate average cycle length  
+✅ Predict next cycle dates  
+✅ Responsive for mobile & desktop  
+✅ Clean and user-friendly interface  
 
 ---
 
 ## 🛠️ Tech Stack
-- **Frontend:** HTML, CSS, JavaScript  
-- **Deployment:** GitHub Pages  
+- 🌐 **Frontend:** HTML, CSS, JavaScript  
+- 🚀 **Deployment:** GitHub Pages  
 
 ---
 
-## 📷 Screenshot
-(Add a screenshot later using:  
-`![App Screenshot](screenshot.png)`)
+## 📸 Screenshots
+> *(Add screenshots later for a professional look — save your app screen as `screenshot.png` and place it in the repo)*  
+
+![App Screenshot](screenshot.png)  
 
 ---
 
-## 📌 How to Run Locally
+## 📌 Installation & Usage
+To run the project locally:  
+
 ```bash
+# Clone the repository
 git clone https://github.com/aastha4502/menstruation-tracker.git
+
+# Open project folder
 cd menstruation-tracker
-open index.html
+
+# Open index.html in browser
