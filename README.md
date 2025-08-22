@@ -19,6 +19,14 @@ This app helps users **track cycles, predict upcoming periods, and manage record
 
 ✨ Left side shows the **desktop view** and right side shows the **mobile-friendly view** of *MenstaBuddy*.
 
+## 📸 Screenshots  
+
+<p align="center">
+  <img src="screenshots/screenshot.png" alt="Desktop Screenshot" width="600" style="border-radius:10px; margin-right:10px;" />
+  <img src="screenshots/screenshot-mobile.jpeg" alt="Mobile Screenshot" width="250" style="border-radius:10px;" />
+</p>
+
+
 
 
 ## ✨ Features
